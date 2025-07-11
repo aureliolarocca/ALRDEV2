@@ -33,9 +33,11 @@ containerBtnLight.addEventListener("click", () => {
   // Dichiarazione di elementi che cambiano colore
   const header = document.querySelector("header");
   const allP = document.querySelectorAll("p");
+  const allH3 = document.querySelectorAll("h3");
+  const main = document.querySelector("main");
 
-  const toDarkToWhiteBackground = [header, menu];
-  const toWhiteToDarkText = [...allP];
+  const toDarkToWhiteBackground = [header, menu, main];
+  const toWhiteToDarkText = [...allP, ...allH3];
 
   if (light.classList.contains("light-active")) {
     light.classList.remove("light-active");

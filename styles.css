@@ -21,7 +21,9 @@ nav,
 .changeShadowActiveMenu,
 .menu p,
 body,
-header {
+header,
+main,
+h3 {
   transition: 1s all ease;
 }
 .changeColorText {
@@ -49,7 +51,9 @@ nav {
 .light,
 .container-social-menu,
 header,
-.container-memoji {
+.container-memoji,
+.container-card-service,
+.card-servizi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +216,7 @@ h2 {
 
   text-align: center;
 }
-button {
+.btnHeader {
   position: relative; /* Necessario per posizionare sopra l'overlay */
   z-index: 2; /* Porta il bottone sopra l'overlay */
   width: 18rem;
@@ -241,6 +245,7 @@ h3 {
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
+  font-weight: 600;
 }
 
 .container-linguaggi {
@@ -252,12 +257,23 @@ h3 {
   align-items: center;
   flex-direction: row;
   margin: 3rem auto;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.container-linguaggi img {
-  width: 2.5rem;
+.container-linguaggi img:nth-of-type(1),
+.container-linguaggi img:nth-of-type(5) {
+  width: 3rem;
 }
-.container-linguaggi img:nth-of-type(3),
+.container-linguaggi img:nth-of-type(2) {
+  width: 2rem;
+}
+.container-linguaggi img:nth-of-type(3) {
+  width: 3.5rem;
+}
 .container-linguaggi img:nth-of-type(4) {
   width: 3rem;
 }
@@ -265,14 +281,92 @@ h3 {
 .container-memoji {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .container-memoji img {
   width: 15rem;
 }
 .skill button {
-  width: 12rem;
-  height: 3rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 13px 25px rgba(24, 119, 242, 0.4), 0 2px 4px rgba(0, 0, 0, 0.4); /* combinazione blu + ombra scura */
+  color: rgb(230, 230, 230);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #1877f2;
+  border: none;
+  transition: 0.3s ease-in-out; /* Transizione più fluida */
+  /* Ho rimosso margin-left: 20rem; in quanto 'align-items: center' in header lo centra */
   position: relative;
-  left: 5.7rem;
-  bottom: 0.2rem;
+  left: 4rem;
+}
+
+.service {
+  padding-top: 2.2rem;
+}
+.service h3 {
+  font-size: 2.2rem;
+}
+.container-card-service {
+  padding-top: 3rem;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card-servizi {
+  width: 90%;
+  height: auto;
+  border: none;
+  background-color: #161b22;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+.service h4 {
+  font-size: 1.8rem;
+  color: rgb(230, 230, 230);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.service p {
+  font-size: 1.2rem;
+  color: rgb(230, 230, 230) !important;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.banner {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.banner h4 {
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: #181818;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(230, 230, 230);
+  text-align: center;
+  line-height: 1.5;
+}
+.banner img {
+  position: absolute;
+  width: 3rem;
+  right: 2rem;
+  bottom: 4.1rem;
 }
