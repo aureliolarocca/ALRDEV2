@@ -31,10 +31,10 @@ const imgLight = document.getElementById("btnImage");
 
 containerBtnLight.addEventListener("click", () => {
   // Dichiarazione di elementi che cambiano colore
-  const body = document.querySelector("body");
+  const header = document.querySelector("header");
   const allP = document.querySelectorAll("p");
 
-  const toDarkToWhiteBackground = [body];
+  const toDarkToWhiteBackground = [header, menu];
   const toWhiteToDarkText = [...allP];
 
   if (light.classList.contains("light-active")) {
