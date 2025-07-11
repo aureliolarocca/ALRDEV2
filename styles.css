@@ -48,7 +48,8 @@ nav {
 .container-btn-light,
 .light,
 .container-social-menu,
-header {
+header,
+.container-memoji {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,4 +228,51 @@ button {
 
   transition: 0.3s ease-in-out; /* Transizione più fluida */
   /* Ho rimosso margin-left: 20rem; in quanto 'align-items: center' in header lo centra */
+}
+
+.skill {
+  height: auto;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.container-linguaggi {
+  width: 90%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 3rem auto;
+}
+
+.container-linguaggi img {
+  width: 2.5rem;
+}
+.container-linguaggi img:nth-of-type(3),
+.container-linguaggi img:nth-of-type(4) {
+  width: 3rem;
+}
+
+.container-memoji {
+  width: 100%;
+  height: auto;
+}
+.container-memoji img {
+  width: 15rem;
+}
+.skill button {
+  width: 12rem;
+  height: 3rem;
+  position: relative;
+  left: 5.7rem;
+  bottom: 0.2rem;
 }
