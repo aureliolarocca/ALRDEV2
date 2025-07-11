@@ -169,7 +169,7 @@ header {
   background-image: url("Progetto\ senza\ titolo.gif");
   background-size: cover;
   background-position: center;
-  height: 60%;
+  height: 55%;
   width: 90%;
   color: white;
   display: flex;
@@ -214,7 +214,7 @@ h2 {
 button {
   position: relative; /* Necessario per posizionare sopra l'overlay */
   z-index: 2; /* Porta il bottone sopra l'overlay */
-  width: 16rem;
+  width: 18rem;
   height: 5rem;
   border-radius: 1rem;
   box-shadow: 0 13px 25px rgba(24, 119, 242, 0.4), 0 2px 4px rgba(0, 0, 0, 0.4); /* combinazione blu + ombra scura */
@@ -223,6 +223,7 @@ button {
   font-weight: 400;
   background-color: #1877f2;
   border: none;
+  margin-top: -2rem;
 
   transition: 0.3s ease-in-out; /* Transizione più fluida */
   /* Ho rimosso margin-left: 20rem; in quanto 'align-items: center' in header lo centra */
