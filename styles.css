@@ -117,6 +117,8 @@ header {
   width: 100vw;
   height: 80vh;
   position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .menu {
   width: 65%;
@@ -167,7 +169,7 @@ header {
   background-image: url("Progetto\ senza\ titolo.gif");
   background-size: cover;
   background-position: center;
-  height: 80%;
+  height: 60%;
   width: 90%;
   color: white;
   display: flex;
@@ -189,14 +191,18 @@ header {
   background: rgba(0, 0, 0, 0.8); /* oscuramento qui */
   z-index: 1;
 }
-h1 {
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+h2 {
   position: relative; /* Necessario per posizionare sopra l'overlay */
   z-index: 2; /* Porta H1 sopra l'overlay */
   color: white; /* Assicura che il colore sia bianco */
-  font-size: 4rem;
+  font-size: 2.6rem;
   font-weight: 500;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Ombra più pronunciata per leggibilità */
-  line-height: 1.5; /* Leggermente aumentato per evitare compressione */
+  line-height: 2; /* Leggermente aumentato per evitare compressione */
   margin-bottom: 0.5rem; /* Aggiunto un piccolo margine inferiore per separare da H2 */
   width: 100%;
 
@@ -209,7 +215,7 @@ button {
   position: relative; /* Necessario per posizionare sopra l'overlay */
   z-index: 2; /* Porta il bottone sopra l'overlay */
   width: 16rem;
-  height: 6rem;
+  height: 5rem;
   border-radius: 1rem;
   box-shadow: 0 13px 25px rgba(24, 119, 242, 0.4), 0 2px 4px rgba(0, 0, 0, 0.4); /* combinazione blu + ombra scura */
   color: rgb(230, 230, 230);
