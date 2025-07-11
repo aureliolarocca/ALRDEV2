@@ -35,7 +35,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid grey;
-
+  overflow-y: hidden;
   padding-top: 1rem;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 .menu {
   width: 65%;
-  height: calc(100vh - 5rem);
+  height: auto;
   position: absolute;
   right: 110%;
   box-shadow: inset 0.5px 0.5px 10px 1px white;
@@ -128,7 +128,7 @@ header {
   color: var(--text);
   align-items: start;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.6rem;
   text-align: start;
   transition: 0.4s ease;
 }
@@ -136,10 +136,13 @@ header {
 .active-ham-men {
   right: 35%;
   transition: 0.4s ease;
+  overflow-y: scroll;
 }
 .menu p {
   padding-left: 2rem;
+  overflow: hidden;
   transition: 1s all;
+  font-size: 1.1rem;
 }
 .container-social-menu {
   width: 100%;
