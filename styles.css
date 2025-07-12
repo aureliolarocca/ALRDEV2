@@ -56,7 +56,9 @@ header,
 .card-servizi,
 .progetti,
 .card-progetti,
-.container-title-card-progetti {
+.container-title-card-progetti,
+.contatti,
+form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,7 +248,7 @@ h2 {
 h3 {
   color: white;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 600;
 }
@@ -429,6 +431,77 @@ h3 {
 .progetti button {
   width: 19rem;
   height: 6rem;
+  border-radius: 1rem;
+  box-shadow: 0 13px 25px rgba(24, 119, 242, 0.4), 0 2px 4px rgba(0, 0, 0, 0.4); /* combinazione blu + ombra scura */
+  color: rgb(230, 230, 230);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #1877f2;
+  border: none;
+}
+.contatti {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contatti p {
+  color: rgb(230, 230, 230);
+}
+.contatti p:nth-of-type(1) {
+  font-size: 1.2rem;
+}
+.contatti p:nth-of-type(2) {
+  padding: 0 2rem;
+  line-height: 2;
+  text-align: center;
+  font-size: 0.9rem;
+}
+form {
+  background-color: #161b22;
+  width: 90%;
+  border: 1px solid #1877f2;
+  border-radius: 2rem;
+  height: auto;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+form label {
+  color: rgb(230, 230, 230) !important;
+  font-size: 1.2rem;
+}
+form input {
+  width: 16rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 1px solid #1877f2;
+  background-color: #0d1117;
+  color: rgb(230, 230, 230);
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  font-size: 0.9rem;
+  width: 16rem;
+  height: 15rem;
+  padding: 1.5rem;
+  background-color: #0d1117;
+  color: rgb(230, 230, 230);
+  border-radius: 2rem;
+  border-color: #1877f2;
+  margin-bottom: 1.5rem;
+  margin-top: -1rem;
+}
+
+form button {
+  width: 10rem;
+  height: 4rem;
   border-radius: 1rem;
   box-shadow: 0 13px 25px rgba(24, 119, 242, 0.4), 0 2px 4px rgba(0, 0, 0, 0.4); /* combinazione blu + ombra scura */
   color: rgb(230, 230, 230);
