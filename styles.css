@@ -60,7 +60,11 @@ header,
 .contatti,
 form,
 .container-link-contatti,
-.container-link {
+.container-link,
+footer,
+.container-footer-link,
+.container-footer-logo,
+.container-footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +317,7 @@ h3 {
 }
 
 .service {
-  padding-top: 2.2rem;
+  padding-top: 3rem;
 }
 .service h3 {
   font-size: 2.2rem;
@@ -382,7 +386,7 @@ h3 {
 .progetti {
   width: 100%;
   height: auto;
-  padding-top: 2rem;
+  padding-top: 3rem;
   justify-content: space-around;
   flex-direction: column;
   gap: 4rem;
@@ -412,7 +416,7 @@ h3 {
   gap: 2rem;
 }
 .container-title-card-progetti h4 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .container-title-card-progetti img {
@@ -422,13 +426,14 @@ h3 {
 
 .card-progetti img {
   width: 90%;
+  height: auto;
   border-radius: 2rem;
   margin-bottom: 2rem;
 }
 .card-progetti p:nth-of-type(2) {
   padding: 1rem;
-  text-decoration: underline #388bfd;
-  font-size: 1.4rem;
+  text-decoration: underline #388bfd !important;
+  font-size: 1.1rem;
 }
 .progetti button {
   width: 19rem;
@@ -442,7 +447,7 @@ h3 {
   border: none;
 }
 .contatti {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   width: 100%;
   height: auto;
   flex-direction: column;
@@ -527,10 +532,56 @@ form button {
   flex-direction: column;
 }
 .container-link svg {
-  width: 5rem;
+  width: 4rem;
   color: #1877f2;
+  text-decoration: none;
 }
 .container-link:nth-of-type(3) svg {
-  width: 5rem;
   color: rgb(37, 211, 102);
+}
+footer {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  border-top: 1px solid grey;
+  position: relative;
+  padding: 5rem 0.5;
+  padding-bottom: 2rem;
+  background-color: var(--background);
+}
+.container-footer-logo p {
+  color: rgb(230, 230, 230) !important;
+}
+.container-footer-logo {
+  flex-direction: column;
+
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+}
+.container-footer-logo img {
+  width: 30%;
+}
+.container-footer-link {
+  width: 100%;
+
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.container-footer-link p {
+  color: #9ca3af !important;
+  font-size: 0.8rem;
+}
+.container-footer-social {
+  width: 100%;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+}
+.container-footer-social a {
+  color: white;
+}
+footer p:nth-last-of-type(1) {
+  color: #9ca3af !important;
+  font-size: 0.7rem;
+  text-align: center;
 }
